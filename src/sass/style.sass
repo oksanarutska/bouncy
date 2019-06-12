@@ -1,0 +1,1006 @@
+@import "variable"
+
+*
+  margin: 0
+  padding: 0
+
+.wrapper
+  max-width: 1100px
+  margin: 0 auto
+  padding: 0 30px
+
+.header_background
+  background: url("../img/header_background.png")
+  height: 100vh
+  width: 100%
+  background-size: cover
+  position: relative
+
+.wrapper_flex
+  display: flex
+  flex-wrap: wrap
+
+.header__menu
+  justify-content: space-between
+  padding: 40px 80px 0 80px
+  align-items: center
+
+.menu_wrapper
+  list-style: none
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+
+.menu__text
+  color: $color_white
+  text-decoration: none
+  font-family: $font-family__open
+  font-size: 14px
+  padding: 10px 20px
+  border: 1px solid transparent
+
+.menu__text:hover
+  border: 1px solid $color_white
+  border-radius: 20px
+
+.header__text
+  display: flex
+  align-items: center
+  text-align: center
+  flex-direction: column
+  justify-content: center
+  position: absolute
+  width: 50%
+  top: 50%
+  left: 50%
+  margin: 0 -50% 0 0
+  transform: translate(-50%, -50%)
+
+.text_main
+  font-size: 35px
+  font-family: $font-family__pro
+  color: $color_white
+  font-weight: 400
+  letter-spacing: 2px
+  opacity: 0.6
+
+.text_content
+  font-family: $font-family__open
+  font-size: 14px
+  color: $color_white
+  font-weight: 400
+  margin-top: 20px
+  opacity: 0.6
+
+.wrapper__content_first
+  justify-content: space-between
+  align-items: center
+  flex-direction: row
+
+.content_first
+  display: flex
+  flex-direction: column
+  align-items: baseline
+  justify-content: flex-start
+  text-align: left
+  width: 50%
+
+.content
+  font-family: $font-family__pro
+  color: $color_gray
+  &_header
+    font-size: 20px
+    font-weight: 400
+  &_text
+    font-size: 14px
+    font-weight: 600
+    margin: 40px 0 30px 0
+  &_button
+    font-size: 14px
+    padding: 10px 30px
+    border-radius: 20px
+    text-decoration: none
+    border: 1px solid $color_gray
+    &:hover
+      background: $color_gray_light_text
+      color: $color_white
+      transition-duration: 0.5s
+
+.content__img
+  padding: 40px 0
+
+.content__background_second
+  background: $color_gray_light_background
+
+.content__header_second
+  margin: 0 auto
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  width: 40%
+  text-align: center
+  padding-top: 70px
+
+.content__icon
+  padding: 11px 12px
+  border-radius: 50%
+  background: $color_gray_light_text
+  &:hover
+    background: $color_green
+    transition-duration: 0.5s
+  &_heart
+    width: 26px
+    height: 25px
+  &_mouse
+    width: 18px
+    height: 27px
+    padding: 10px 16px
+  &_light
+    width: 20px
+    height: 26px
+    padding: 10px 15px
+
+.content__icon_second
+  align-items: center
+  width: 50%
+  justify-content: space-between
+  margin: 20px 0 40px 0
+
+.content__main_second
+  flex-direction: column
+  text-align: left
+  padding-bottom: 80px
+
+.content__main_wrapper
+  align-items: baseline
+  justify-content: space-between
+  flex-direction: row
+
+.content__text_width
+  width: 40%
+
+.text_bold_green
+  color: $color_green
+
+.content_third
+  align-items: center
+  justify-content: center
+  width: 40%
+  margin: 0 auto
+  padding: 60px 0 50px 0
+  text-align: center
+
+.content__img_scape
+  align-items: center
+  justify-content: center
+
+.img_scape
+  width: 100%
+
+.img_scape_wrapper
+  display: flex
+  height: 300px
+  width: 250px
+  flex-grow: 1
+  filter: grayscale(100%)
+  transition: 0.7s
+  &:hover
+    flex-grow: 10
+    filter: grayscale(0)
+
+.img_scape_wrapper .after
+  position: absolute
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
+  background: black
+  opacity: 0.9
+  display: flex
+  align-items: center
+  justify-content: center
+  &:hover
+    opacity: 0
+    transition: 0.7s
+
+.text_after
+  color: $color_white
+  opacity: 0.7
+  text-align: center
+  font-family: $font-family__pro
+  font-size: 20px
+
+.contetn_backgoung_four
+  background: url("../img/green_line.png") no-repeat
+  background-size: cover
+  width: 100%
+
+.wrapper_contnet_four
+  align-items: center
+  justify-content: space-between
+  padding: 30px
+
+.content__button_four
+  padding: 10px 15px
+  border: 1px solid $color_white
+  color: $color_white
+  border-radius: 20px
+  text-decoration: none
+  font-family: $font-family__open
+  font-size: 16px
+  &:hover
+    transition-duration: 0.5s
+    background: $color_white
+    opacity: 0.8
+    color: $color_black
+
+.content__text_four
+  font-family: $font-family__open
+  font-size: 16px
+  color: $color_white
+  opacity: 0.8
+
+.wrapper_content_five
+  flex-direction: column
+  align-items: center
+  padding: 30px 0 70px 0
+
+.content_five
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+.content__menu_img
+  display: flex
+  flex-direction: column
+
+.menu__img
+  background: $color_gray_light_text
+  padding: 10px
+  border-radius: 50%
+  margin: 5px 0
+  &:hover
+    background: $color_green
+    transition-duration: 0.5s
+
+.menu__img_width
+  padding: 10px 12px
+
+.content__text_five
+  display: flex
+  flex-direction: column
+  width: 40%
+
+.graph_wrapper
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  width: 40%
+
+.graph_item
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+
+.graph__text
+  font-size: 20px
+  font-weight: 600
+  padding: 40px 35px
+  border: 4px solid $color_green
+  border-radius: 50%
+
+.graph__text_under
+  font-size: 16px
+  margin: 20px 0 0 0
+
+.content__background_six
+  background: url("../img/man.png")
+  width: 100%
+  background-size: cover
+  padding: 70px 0
+
+.content__text_six
+  flex-direction: column
+  text-align: left
+  width: 50%
+  margin-left: 20px
+
+.content_six
+  color: $color_white
+  opacity: 0.7
+
+.content_six_name
+  color: $color_white
+  margin: 0
+
+.content_link_six
+  color: $color_green
+  text-decoration: none
+
+.content_under_margin
+  margin: 0
+
+.wrapper__content_six
+  position: relative
+
+.content_img_six
+  position: absolute
+  right: 0
+  top: -110px
+  width: 350px
+  height: 250px
+
+.content_seven
+  flex-direction: column
+  width: 60%
+  align-items: center
+  justify-content: center
+  margin: 0 auto
+  text-align: center
+  padding: 50px 0
+
+.content__menu
+  color: $color_gray_light_text
+  text-decoration: none
+  font-family: $font-family__open
+  font-size: 14px
+  padding-bottom: 7px
+  border-bottom: 1px solid transparent
+  &:hover
+    border-bottom: 1px solid $color_green
+
+.content_menu_wrapper
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-wrap: wrap
+  list-style: none
+  & li
+    margin: 10px
+
+.wrapper_content_grid
+  display: grid
+  width: 100%
+  grid-gap: 5px
+  grid-template-columns: repeat(4, 1fr)
+
+.wrapper_item_grid_one
+  display: grid
+  grid-gap: 5px
+  grid-template-rows: 360px 360px 200px
+
+.wrapper_item_grid_two
+  display: grid
+  grid-template-rows: 200px 360px 360px
+  grid-gap: 5px
+
+.wrapper_item_grid_three
+  display: grid
+  grid-template-rows: 280px 360px 280px
+  grid-gap: 5px
+
+.wrapper_item_grid_three
+  display: grid
+  grid-template-rows: 280px 360px 280px
+  grid-gap: 5px
+
+.wrapper_item_grid_four
+  display: grid
+  grid-template-rows: 360px 250px 310px
+  grid-gap: 5px
+
+.content__img_eight
+  height: 100%
+  width: 100%
+
+.wrapper_content__img
+  position: relative
+  cursor: pointer
+  overflow: hidden
+
+.wrapper_img__text
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
+  position: absolute
+  background: rgba(0, 0, 0, 0.8)
+  transition: all 0.75s
+  transform: scale(0)
+  opacity: 0
+
+.wrapper_content__img:hover
+  .wrapper_img__text
+    transform: scale(1)
+    opacity: 1
+
+.wrapper_img__text
+  display: flex
+  flex-direction: column
+  text-align: left
+  justify-content: center
+  padding: 0 30px
+
+
+.text_header_after
+  color: $color_green
+  font-family: $font-family__open
+  font-size: 18px
+  letter-spacing: 1.5px
+  font-weight: 300
+
+.text_line_after
+  width: 50px
+  background: $color_green
+  height: 1px
+  margin: 10px 0
+
+.text_content_after
+  color: $color_white
+  font-family: $font-family__open
+  font-size: 8px
+  font-weight: 300
+  letter-spacing: 1.5px
+  margin-bottom: 60px
+  width: 80%
+
+.icon_after
+  background: black
+  padding: 8px 10px
+  border-radius: 50%
+  transition: all 0.7s
+  margin: 0 10px 0 0
+
+.icon_after:hover
+  background: $color_green
+
+.content__background_thirt
+  background: url("../img/green_line_2.png")
+  background-size: cover
+  width: 100%
+  display: flex
+  flex-direction: column
+  align-items: center
+  text-align: center
+  justify-content: center
+  padding: 50px 0
+  margin: 30px 0
+
+.button_position
+  margin-top: 30px
+
+.content__background_add
+  padding: 30px 0
+
+.wrapper_slider
+  margin: 0 auto
+  justify-content: space-between
+  align-items: center
+  padding-bottom: 60px
+
+.wrapper_slider__content
+  flex-direction: column
+  justify-content: right
+  text-align: right
+  width: 45%
+
+.wrapper_content__tittle
+  text-align: right
+  border-right: 3px solid $color_green
+  padding-right: 30px
+  margin-right: -30px
+
+.tittle__header
+  font-family: $font-family__pro
+  color: $color_black
+  font-weight: 600
+  font-size: 20px
+
+.tittle__content
+  font-family: $font-family__open
+  color: $color_gray_light_text
+  font-style: italic
+  font-weight: 400
+  font-size: 14px
+  letter-spacing: 1.5px
+
+.wrapper_progress
+  max-width: 330px
+  margin: 30px 0
+  position: relative
+  margin-left: 25%
+
+.wrapper_progress_back
+  width: 100%
+  height: 5px
+  background: $color_gray_light_text
+  opacity: 0.7
+  overflow: hidden
+  border-radius: 20px
+
+.progress
+  max-width: 80%
+  height: 5px
+  background: $color_green
+  border-radius: 20px
+
+.wrapper_progress__content
+  width: 100%
+  position: absolute
+  align-items: center
+  top: -25px
+  justify-content: space-between
+
+.progress_content
+  font-style: normal
+
+.slider__dots
+  display: flex
+  margin: 0 auto
+  justify-content: center
+
+.dot
+  width: 15px
+  height: 15px
+  margin: 0 10px
+  display: block
+  cursor: pointer
+  border-radius: 50%
+  border: 1px solid $color_green
+  &:hover
+    background: $color_green
+
+.wrapper_slider_flex
+  display: flex
+  flex-wrap: wrap
+  width: 100%
+  flex-direction: row
+  float: none
+  justify-content: space-around
+  align-items: center
+
+.wrapper_slider__main
+  display: flex
+  flex-wrap: wrap
+  align-items: center
+  justify-content: space-around
+
+.wrapper_container
+  height: 300px
+  position: relative
+  overflow: hidden
+  width: 250px
+  margin: 10px
+  & .container_main
+    width: 100%
+    height: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    background: $color_white
+    & .container_header
+      height: 20%
+      width: 100%
+      background: $color_green
+      text-align: center
+      margin: 0 auto
+      display: flex
+      align-items: center
+      justify-content: center
+      & p
+        color: $color_white
+        font-family: $font-family__pro
+        font-size: 20px
+        text-transform: uppercase
+    & .container_content
+      display: flex
+      align-items: center
+      justify-content: center
+      flex-direction: column
+      margin: 0 auto
+      height: 80%
+      & p
+        color: $color_green
+        font-family: $font-family__open
+        font-size: 40px
+        font-weight: bold
+      & span
+        color: $color_gray_light_text
+        font-family: $font-family__pro
+        font-weight: 400
+        font-size: 18px
+
+  & .container_add
+    position: absolute
+    left: 0
+    top: -100%
+    height: 100%
+    width: 100%
+    background: $color_white
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    transition: all 0.8s cubic-bezier(0.4, 0, 1, 1) 0s
+    & .container_content
+      display: flex
+      flex-direction: column
+      align-items: baseline
+      justify-content: center
+      height: 80%
+      margin: 0 auto
+
+      & p
+        color: $color_gray_light_text
+        font-family: $font-family__open
+        font-size: 16px
+        margin: 5px 0
+    & .container_footer
+      display: flex
+      margin: 0 auto
+      align-items: center
+      justify-content: center
+      height: 20%
+      background: $color_green
+      width: 100%
+      & a
+        color: $color_white
+        font-family: $font-family__open
+        font-size: 18px
+        text-decoration: none
+  &:hover
+    cursor: pointer
+    & .container_add
+      top: 0
+
+.wrapper_flex_container
+  align-items: center
+  justify-content: space-around
+.img_size
+  width: 300px
+  height: 400px
+.wrapper_table
+  padding-bottom: 80px
+
+.container_contact
+  display: flex
+  flex-wrap: wrap
+  align-items: center
+  justify-content: space-around
+  & .item_contact
+    margin: 15px
+    width: 250px
+    background: white
+    min-height: 270px
+    transition: all 0.7s ease-in-out
+    &:hover
+      transform: scale(1.1)
+      cursor: pointer
+      transition: all 0.7s ease-in-out
+    & .item_content_wrapper
+      width: 100%
+      height: 100%
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+
+      & .header_contact
+        background: url("../img/gray_heand.png") no-repeat
+        background-size: cover
+        width: 100%
+        height: 150px
+        display: flex
+        align-items: center
+        justify-content: center
+        &_email
+          background: url("../img/gray_map.png") no-repeat
+          background-size: cover
+        &_phone
+          background: url("../img/gray_phone.png") no-repeat
+          background-size: cover
+
+      & .main_contact
+        width: 100%
+        height: 50%
+        align-items: center
+        justify-content: center
+        display: flex
+        flex-direction: column
+        flex-wrap: wrap
+        & p
+          padding: 20px 0
+        & .content__header
+          font-family: $font-family__open
+          color: $color_gray_light_text
+          font-size: 18px
+        & .content
+          font-family: $font-family__open
+          color: $color_gray_light_text
+          font-size: 14px
+          padding: 0 10px
+
+.form
+  display: flex
+  flex-direction: column
+  width: 100%
+  margin: 0 auto
+  padding: 80px 0 100px 0
+  & .form_information
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    justify-content: space-between
+    margin: 0 auto
+    width: 100%
+    & input
+      width: 290px
+      padding: 10px
+      margin: 10px 0
+  & textarea
+    width: 100%
+    min-height: 200px
+    margin-top: 40px
+  & .button_submit
+    width: 100%
+    padding: 10px
+    background: $color_green
+    color: $color_white
+    font-family: $font-family__open
+    font-size: 20px
+    border: none
+    margin-top: 30px
+    cursor: pointer
+    transition: all 0.7s ease-in-out
+    &:hover
+      background: $color_gray
+      transition: all 0.7s ease-in-out
+      color: $color_green
+
+.footer
+  width: 100%
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  margin: 0 auto
+  padding: 60px 0
+  & h2
+    color: black
+    font-family: $font-family__open
+    font-size: 24px
+  & p
+    color: $color_gray_light_text
+    font-family: $font-family__open
+    font-size: 14px
+    padding: 20px 0 30px 0
+  & .icon_social
+    display: flex
+    align-items: center
+    justify-content: center
+    & img
+      margin: 0 10px
+      transition-duration: 0.6s
+      &:hover
+        transform: scale(1.5)
+        transition-duration: 0.6s
+
+
+.burger_menu
+  display: none
+  position: absolute
+  top: 20px
+  right: 35px
+  width: 50px
+  height: 80px
+  cursor: pointer
+
+  & span
+    display: block
+    position: absolute
+    top: 30px
+    left: 30px
+    width: 40px
+    height: 4px
+    text-align: center
+    background: $color_green
+    transition-duration: 0.7s
+
+  & span::before, span::after
+    width: 40px
+    height: 4px
+    position: absolute
+    top: 30px
+    left: 0
+    display: block
+    background: $color_green
+    text-align: center
+    content: ""
+    transition: all 0.7s ease-in-out
+  & span::before
+    top: 10px
+    transition-duration: 0.7s
+  & span::after
+    top: -10px
+    transition-duration: 0.7s
+
+  &.active span
+      transition-duration: 0.7s
+      background: none
+
+  &.active span::before
+      transform: rotate(410deg)
+      top: -10px
+
+  &.active span::after
+      transform: rotate(-410deg)
+
+
+
+
+
+@media screen and (max-width: 900px)
+  .header__text
+    width: 100%
+
+  .menu_wrapper
+    display: none
+    position: absolute
+    left: -80px
+    transition: all 1s ease-in-out
+    transition-duration: 1s
+  .burger_menu
+    display: block
+  .menu_wrapper
+    &.show
+     display: flex
+     height: 100%
+     width: 80%
+     background: $color_gray_light_text
+     z-index: 10000
+     flex-direction: column
+     left: 0
+     position: absolute
+     transition: all 1s ease-in-out
+     transition-duration: 1s
+     top: 0
+     align-items: baseline
+     justify-content: start
+     & li
+       margin: 10px 0
+       width: 100%
+  .menu__text
+    border: none
+    font-size: 20px
+    &:hover
+      border: none
+      color: $color_green
+  .menu__text::after
+    display: block
+    width: 100%
+    height: 1px
+    background: $color_white
+    content: ""
+
+
+
+
+  .header__menu
+    justify-content: center
+  .content__header_second
+    width: 100%
+  .content__text_width
+    width: 100%
+  .content_third
+    width: 100%
+  .wrapper_contnet_four
+    justify-content: center
+  .content__text_four
+    margin-bottom: 20px
+
+  .content_five
+    flex-wrap: wrap
+  .graph_wrapper
+    width: 100%
+  .content__text_five
+    width: 90%
+  .content_img_six
+    display: none
+  .content__text_six
+    width: 100%
+  .content_seven
+    width: 100%
+  .text_content_after
+    font-size: 16px
+
+  .text_header_after
+    font-size: 20px
+  .wrapper_content_grid
+    grid-template-columns: repeat(2, 1fr)
+
+@media screen and (max-width: 580px)
+  .text_content_after
+    font-size: 16px
+
+  .text_header_after
+    font-size: 20px
+  .content_first
+     width: 100%
+     margin-top: 20px
+  .wrapper__content_first
+      justify-content: center
+  .content__menu_img
+      width: 100%
+      flex-direction: row
+      justify-content: space-around
+  .content_menu_wrapper
+    display: none
+    transition-duration: 0.7s
+    &.show_content_menu
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+      background: $color_white
+      width: 100%
+      transition-duration: 0.7s
+
+
+  .menu_triangle
+    width: 0
+    height: 0
+    border-left: 15px solid transparent
+    border-right: 15px solid transparent
+    border-bottom: 25px solid $color_green
+    cursor: pointer
+    display: block
+    transition-duration: 0.7s
+  .menu_triangle.active_content
+    transform: rotate(180deg)
+    transition-duration: 0.7s
+
+
+  .form
+      & .form_information
+        justify-content: center
+  .wrapper_content_grid
+    grid-template-columns: auto
+  .graph_wrapper
+    justify-content: center
+  .graph_item
+    margin: 20px
+  .content__icon_second
+    width: 100%
+
+
+@media screen and (max-width: 620px)
+  .wrapper_slider__main
+    flex-direction: column
+  .slick-track
+    height: 700px
+  .slick-next
+    display: none
+  .slick-prev
+    display: none
+  .wrapper_slider__content
+    width: 100%
+  .wrapper_content__tittle
+    text-align: center
+  .content_text
+    text-align: center
+    padding: 0 10px
+
+
+
+.slick-prev:before
+  color: black
+.slick-next:before
+  color: black
+
+
+
+
+
